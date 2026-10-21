@@ -1,6 +1,6 @@
-# Dockerized Document RAG API
+# Document RAG API
 
-A local Retrieval-Augmented Generation (RAG) service that indexes PDF, DOCX, TXT, and Markdown files from a directory and answers questions with source references.
+A simple local RAG application that reads PDF, DOCX, TXT, and Markdown files from a folder and answers questions with source references.
 
 ## Stack
 
