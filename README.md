@@ -50,6 +50,10 @@ question  → embedding search → relevant chunks → Qwen3 → answer + source
 
 Open `http://localhost:8000/docs` for interactive API documentation.
 
+## Vector Storage
+
+Chroma stores the generated document vectors locally in `data/chroma/`. This directory is mounted into the API container and persists when containers restart. It is generated data, so it is excluded from Git and can be recreated at any time by calling `POST /ingest`.
+
 ## Endpoints
 
 | Endpoint | Purpose |
