@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+data/chroma/
+data/documents/*
+!data/documents/.gitkeep
+!data/documents/sample_*.md

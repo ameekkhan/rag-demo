@@ -1,0 +1,21 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+
+  api:
+    build: .
+    env_file: .env
+    depends_on:
+      - ollama
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/documents:/app/data/documents:ro
+      - ./data/chroma:/app/data/chroma
+
+volumes:
+  ollama_data:
