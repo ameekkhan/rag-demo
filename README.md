@@ -1,4 +1,4 @@
-# Document RAG API
+# RAG - Demo
 
 A simple local RAG application that reads PDF, DOCX, TXT, and Markdown files from a folder and answers questions with source references.
 
